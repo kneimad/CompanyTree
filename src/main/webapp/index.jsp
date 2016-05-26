@@ -28,6 +28,7 @@
 
     <div class="starter-template">
         <h1>Company Tree</h1>
+        <h5>Name  <----->  Earn  <----->  Earn+ChildEarn</h5>
         <div id="jstree"></div>
     </div>
 

@@ -1,3 +1,12 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Хост: 127.0.0.1
+-- Время создания: Май 26 2016 г., 18:09
+-- Версия сервера: 10.1.13-MariaDB
+-- Версия PHP: 7.0.6
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
@@ -29,19 +38,19 @@ CREATE TABLE `comp` (
 --
 
 INSERT INTO `comp` (`id`, `name`, `earning`, `parent_id`) VALUES
-  (1, 'Konex', 100, 0),
-  (2, 'Apt1', 50, 1),
-  (3, 'Apt2', 30, 1),
+  (2, 'Apt_Kon_1', 50, 14),
+  (3, 'Apt_Kon_2', 30, 14),
   (4, 'Avicena', 80, 0),
-  (5, 'Apt1', 40, 2),
-  (6, 'Apt2', 70, 2),
-  (7, 'Apt3', 10, 2),
-  (8, 'Otd1', 40, 5),
-  (9, 'Otd2', 30, 5),
-  (10, 'Otd1', 30, 3),
-  (11, 'Otd2', 30, 3),
-  (12, 'Otd3', 40, 3),
-  (13, 'Otd1', 30, 7);
+  (5, 'Apt_Av_1', 40, 4),
+  (6, 'Apt_Av_2', 70, 4),
+  (7, 'Apt_Av_3', 10, 4),
+  (10, 'Otd_Kon_1', 30, 3),
+  (11, 'Otd_Kon_2', 30, 3),
+  (12, 'Otd_Kon_3', 40, 3),
+  (13, 'Otd_Av_1', 30, 7),
+  (14, 'Konex', 100, 0),
+  (17, 'Otd_Av_1', 20, 5),
+  (18, 'Otd_Av_2', 40, 5);
 
 --
 -- Индексы сохранённых таблиц
@@ -56,3 +65,13 @@ ADD KEY `parent_index` (`parent_id`);
 
 --
 -- AUTO_INCREMENT для сохранённых таблиц
+--
+
+--
+-- AUTO_INCREMENT для таблицы `comp`
+--
+ALTER TABLE `comp`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
